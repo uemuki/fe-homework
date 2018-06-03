@@ -1,0 +1,116 @@
+div,ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.fir {
+    /* border: 1px solid #000; */
+    margin: auto;
+    width: 630px;
+    height: 22px;
+}
+.tag {
+    /* border: 1px solid gray; */
+    width: 610px;
+    height: 22px;
+    color: rgb(255, 68, 0);
+    display: block;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    font-size: 12px;
+    /* line-height: 18px; */
+    margin-left: 17px;
+    
+}
+.tag li {
+    float: left;
+    margin: 0 0 0 4px;
+    width: 36px;
+    height: 22px;
+    text-align: center;
+    /* 上下不能居中 */
+}
+.tag li:hover {
+    color: white;
+    background-image: linear-gradient(to right, rgb(255, 144, 0) 0px, rgb(255, 80, 0) 100%);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.sec {
+    /* border: 1px solid black; */
+}
+.sec .content {
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 630px;
+    height: 40px;
+    position: relative;
+}
+.sec .content .inputbox {
+    /* position: relative; */
+}
+.sec .content .searchbox {
+    margin: 0;
+    padding: 6px 0 6px 20px;
+    width: 534px;
+    height: 24px;
+    /* border: 2px solid rgb(255, 144, 0); */
+    border-left: 2px solid rgb(255, 68, 0);
+    border-top: 2px solid rgb(255, 68, 0);
+    border-bottom: 2px solid rgb(255, 68, 0);
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    font-size: 12px;
+}
+.sec .search-icon img {
+    /* border: 1px solid red; */
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    /* display: inline-block; */
+}
+.sec .photo-icon img {
+    /* border: 1px solid green; */
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    right: 86px;
+    /* display: inline-block; */
+}
+.sec .searchbutton {
+    /* border: 1px solid yellow; */
+    display: block;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+}
+.sec .searchbutton input {
+    width: 74px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 0px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(255, 144, 0) 0px, rgb(255, 80, 0) 100%) 
+}
+.sec .list {
+    border: 1px solid rgb(165, 165, 165);
+    width: 512px;
+    padding: 0 20px;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    right: 74px;
+}

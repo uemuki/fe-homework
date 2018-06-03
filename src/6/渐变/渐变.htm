@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul,div {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .image {
+        /* border: 1px solid yellow; */
+        width: 890px;
+        margin: auto;
+        background-image: linear-gradient(to right, pink 0px, white 100%);        
+    }
+    .image li {
+        /* border: 1px solid green; */
+        float: left;
+        margin: 0 195px 0 0;
+    }
+    .image li img {
+        width: 24px;
+        /* background-position: left top; */
+        /* attention: not effective, why */
+    }
+    .image li.fir {
+        /* position: left top; */
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center">进阶</h2>
+    <ul class="image clearfix">
+        <li class="fir">
+            <img src="婴儿.png" alt="">
+        </li>
+        <li class="sec">
+            <img src="学生.png" alt="">
+        </li>
+        <li class="thr">
+            <img src="工作.png" alt="">
+        </li>
+        <li class="for">
+            <img src="老人.png" alt="">
+        </li>
+    </ul>
+</body>
+</html>
