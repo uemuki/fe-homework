@@ -29,10 +29,14 @@ div,ul,li {
 .tag li {
     float: left;
     margin: 0 0 0 4px;
+    /* 这个宽度也没必要设置，如无必要 勿增实体，奥卡姆剃刀原则在软件开发中也同样生效 */
     width: 36px;
+    /* 在css中一般不设置高度，而是使用内容撑开, 上面这段css也有宽高，看能否去掉。 */
     height: 22px;
     text-align: center;
     /* 上下不能居中 */
+    /* 上下居中是个小技巧，你可以使用padding完成，也可以使用line-height完成，
+    根据场景是多行文字还是单行文字自行选用。 */
 }
 .tag li:hover {
     color: white;
