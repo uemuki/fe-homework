@@ -30,6 +30,8 @@
     .image li.fir {
         /* position: left top; */
     }
+    /* 这个伪元素用得很好！
+    提个问题： ::after伪元素兼容性如何？:after伪类呢？ 可以在can i use上找到答案，自己去查一下哦 */
     .clearfix::after {
         content: "";
         clear: both;
@@ -41,6 +43,8 @@
 <body>
     <h2 style="text-align: center">进阶</h2>
     <ul class="image clearfix">
+        <!-- 文件名要使用英文哈，不要使用中文
+        -->
         <li class="fir">
             <img src="婴儿.png" alt="">
         </li>

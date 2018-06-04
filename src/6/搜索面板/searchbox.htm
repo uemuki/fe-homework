@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- class名称需要命名得更加语义化（这有点难，可以模仿优秀的网站） -->
     <div class="fir">
         <ul class="tag clearfix">
             <li class="goods">宝贝</li>
-            <li class="tianmao">天猫</li>
+            <li class="tianmao">天</li>
             <li class="shop">店铺</li>
         </ul>
     </div>
@@ -21,12 +22,18 @@
         <form action="">
             <div class="inputbox">
                 <input class="searchbox" type="text" name="search" value="">
+                <!-- 下面这个图标其实是装饰性质（就是去掉不影响内容的表达），可尝试使用背景图来实现。
+                后面会学icon-font和svg来实现图标，常见的图标也可以使用这两种方式实现
+                装饰性的图标，一般不使用img标签来实现，因为img是内容，
+                比如照片什么的要表达给用户看，使用img，这是HTML语义化的要求。 -->
+
+                <!-- 此外图片文件名要用英文， 不要使用中文或拼音（拼音很难还原本义） -->
                 <span class="search-icon"><img src="搜索.png" alt=""></span>
                 <span class="photo-icon"><img src="相机.png" alt=""></span>
             </div>
             <div class="searchbutton">
                 <input type="button" value="搜索">
-            </div>
+            </div
         </form>
         <div class="list">
         <ul>
@@ -70,6 +77,9 @@
         
     </div>
 
+    <!-- 代码可以排得更加整齐些， 代码中所有的空白（换行，空格，缩进等）也是代码的一部分，所以仔细对待。
+    可以尝试在HTML，CSS以及后面要学的JS文件中使用2个空格的缩进，
+    现在的前端界多数使用2个空格缩进的，保持一致会让你以后工作更加习惯。 -->
     
 </body>
 </html>
