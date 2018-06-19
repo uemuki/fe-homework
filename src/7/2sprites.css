@@ -1,0 +1,56 @@
+div,ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+div.top-bar,div.search-bar {
+    width: 700px;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+div.set,ul.nav {
+    border: 1px solid black;
+}
+ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.top-bar li {
+    border: 1px solid red;
+    float: left;
+}
+/* 文本无法上下居中，margin与line-height冲突 */
+.top-bar .icon {
+    border: 1px solid gray;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* margin无效 */
+.top-bar .text {
+    /* padding-bottom: 10px; */
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.test {
+    /* border: 1px dashed red;
+    width: 200px;
+    height: 100px;
+    margin: auto; */
+    width:150px;
+    height:100px;
+    line-height:100px;
+    background-color:#ccc;
+    font-size:12;
+}
+.test span {
+    /* display: inline-block;
+    vertical-align: middle; */
+    display:inline-block;
+    font-size:10px;
+    line-height:140%;
+    vertical-align:middle;
+} 

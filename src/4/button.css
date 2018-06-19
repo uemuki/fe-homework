@@ -1,0 +1,131 @@
+button {
+    margin: 0;
+    padding: 6px 12px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: .25rem;
+    outline: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+button::first-letter {
+    text-transform:capitalize;
+    /* 第一个单词的首字母呢？ */
+}
+button:hover {
+    cursor: pointer;
+}
+.primary {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+/* 颜色递进方法? */
+.primary:hover {
+    background-color: #0069d9;
+    border: 1px solid #0069d9;
+}
+.primary:focus {
+    background-color: #0069d9;
+    border: 1px solid #0069d9;
+    box-shadow: 0 0 0 .25rem #7fbdff;
+}
+.primary:active {
+    background-color: #0062cc;
+    border: 1px solid #0062cc;
+    box-shadow: 0 0 0 .25rem #7fbdff;
+}
+.secondary {
+    background-color: #6c757d;
+    border: 1px solid #6c757d;
+}
+.secondary:hover {
+    background-color: #5c646b;
+    border: 1px solid #5c646b;
+}
+.secondary:focus {
+    background-color: #5c646b;
+    border: 1px solid #5c646b;
+    box-shadow: 0 0 0 .25rem #b5babe;
+    /* box-shadow模拟outline的圆角效果 */
+}
+.secondary:active {
+    background-color: #545b62;
+    border: 1px solid #545b62;
+    box-shadow: 0 0 0 .25rem #b5babe;
+}
+.success {
+    background-color: #28a745;
+    border: 1px solid #28a745;
+}
+.success:hover {
+    background-color: #23903b;
+    border: 1px solid #23903b;
+}
+.success:focus {
+    background-color: #23903b;
+    border: 1px solid #23903b;
+    box-shadow: 0 0 0 .25rem #93d3a2;
+}
+.success:active {
+    background-color: #1e7e34;
+    border: 1px solid #1e7e34;
+    box-shadow: 0 0 0 .25rem #93d3a2;
+}
+.danger {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+}
+.danger:hover {
+    background-color: #c82333;
+    border: 1px solid #c82333;
+}
+.danger:focus {
+    background-color: #c82333;
+    border: 1px solid #c82333;
+    box-shadow: 0 0 0 .25rem #ed9aa2;
+}
+.danger:active {
+    background-color: #bd2130;
+    border: 1px solid #bd2130;
+    box-shadow: 0 0 0 .25rem #ed9aa2;
+}
+.warning {
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+    color: black;
+}
+.warning:hover {
+    background-color: #e0a800;
+    border: 1px solid #e0a800;
+    color: black;
+}
+.warning:focus {
+    background-color: #e0a800;
+    border: 1px solid #e0a800;
+    box-shadow: 0 0 0 .25rem #ffe082;
+}
+.warning:active {
+    background-color: #d39e00;
+    border: 1px solid #d39e00;
+    box-shadow: 0 0 0 .25rem #ffe082;
+}
+.info {
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
+}
+.info:hover {
+    background-color: #138496;
+    border: 1px solid #138496;
+}
+.info:focus {
+    background-color: #138496;
+    border: 1px solid #138496;
+    box-shadow: 0 0 0 .25rem #8ad0db;
+}
+.info:active {
+    background-color: #117a8b;
+    border: 1px solid #117a8b;
+    box-shadow: 0 0 0 .25rem #8ad0db;
+}
+/* 还有一个效果没有实现，
+点击后移开，shadow仍存在，bg-color变为正常状态 */
