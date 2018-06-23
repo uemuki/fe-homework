@@ -5,6 +5,9 @@ body,div,ul,li,a {
     text-decoration: none;
 }
 body {
+    /* 0.625em的字体在这个时候就是 16 * 0.625 = 10px, 有点小
+    一般来说网页中的让人阅读的文字尽量不要设置比12px更小
+    而且有些用户会设置了浏览器的最小文字大小的，所以可能不生效 */
     font-size: 0.625em;
     font-family: Helvetica, Arial, sans-serif;
 }

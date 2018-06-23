@@ -4,6 +4,7 @@ button {
     color: white;
     text-align: center;
     font-size: 16px;
+    /* 这里使用rem是为什么呢？ */
     border-radius: .25rem;
     outline: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -11,6 +12,10 @@ button {
 button::first-letter {
     text-transform:capitalize;
     /* 第一个单词的首字母呢？ */
+    /* text-transform没有提供给整个语句首字母变大写的方法，实际过程中段落首字母大写是由内容本身保证的
+     * CSS主要目的是装饰， 不过你可以尝试使用配合 p::first-letter 来给段落首字母变大写？ 我没试过，你可试试哈。 
+     * 有时候我们会对文本中指定内容加亮(比如搜索结果)，这个通常会对内容进行过滤（使用后台语言），输出的html里面会有额外的标签来实现。
+     */
 }
 button:hover {
     cursor: pointer;
@@ -20,6 +25,7 @@ button:hover {
     border: 1px solid #007bff;
 }
 /* 颜色递进方法? */
+/* 后面学到less就会有相应办法的，别着急哈。 */
 .primary:hover {
     background-color: #0069d9;
     border: 1px solid #0069d9;
@@ -129,3 +135,4 @@ button:hover {
 }
 /* 还有一个效果没有实现，
 点击后移开，shadow仍存在，bg-color变为正常状态 */
+/* 我看shadow实现了，是否把background-color从focus伪类中移除即可？ */
