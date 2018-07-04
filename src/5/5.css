@@ -17,6 +17,8 @@ h2 {
     font: 20px Arial, Helvetica, sans-serif;
     color: #072;
     margin: 0 0 12px 0;
+    /* 行高如果不使用具体的值的话，推荐使用纯数字的，比如1.5，一般不使用百分比。
+    可以看下这个文档了解一些细节：https://developer.mozilla.org/zh-CN/docs/Web/CSS/line-height */
     line-height: 150%;
     font-weight: bold;
 }
@@ -100,6 +102,10 @@ h2 {
     margin: 0 20px;
 }
 .section-dairy li .main {
+    /* 这里为什么不使用float: left来实现布局呢？
+    不过你可以顺便了解一下为什么使用overflow: hidden则可以阻止环绕
+    从这里开始探索一个叫BFC的东西：
+    https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context */
     overflow: hidden;
     width: 672px;
 }
