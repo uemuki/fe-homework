@@ -1,0 +1,30 @@
+div {
+    margin: 0;
+    padding: 0;
+}
+.transform {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+.transform div {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-color: rgb(255, 113, 137);
+    transition-duration: 2s;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+}
+.transform .ball:hover {
+    transform: translateY(300px) scaleY(0.2);
+}
+.transform .square {
+    background-image: radial-gradient(red 5%,pink 70%);
+}
+.transform .square:hover {
+    transform: rotate(360deg) scale(0.5);
+    background-image: linear-gradient(pink 0,red 100%);
+    border-radius: 10px;
+}
