@@ -23,8 +23,6 @@ h2 {
     font-size: 12px; 
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
-
 }
 .top-bar>ul {
     display: flex;
@@ -40,13 +38,10 @@ h2 {
 .top-bar .usersdata {
     display: flex;
     justify-content: flex-end;
-    border: 1px solid red;
-
 }
 .top-bar .menu {
     position: relative;
     padding: 4px 20px 4px 0;
-    border: 1px solid red;
     color: #fff;
 }
 .top-bar .items {
@@ -98,7 +93,6 @@ h2 {
 .main-nav-links {
     display: flex;
     justify-content: space-around;
-    border: 1px solid red;
 }
 /* 使用border，则超出div.main-nav，会使“日记” 受浮动影响，但已经clearfix*/
 .main-nav-links li {
