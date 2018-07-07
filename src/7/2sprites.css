@@ -32,17 +32,20 @@ div,ul,li,a {
     background-size: 28px;
 }
 .section-share .nav a {
-    color: black;
+    color: #545454;
     font-size: 12px;
 }
 .section-share .set {
-    color: black;
+    color: #545454;
     font-size: 12px;
     display: flex;
     align-items: center;
     padding: 0 0 0 20px;
     background: url(2css_sprites.png) no-repeat 0 -36px;
     background-size: 20px;
+}
+.section-share .set a {
+    color: #545454;
 }
 .section-share .search-bar {
     display: flex;
