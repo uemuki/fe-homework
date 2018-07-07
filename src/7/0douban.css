@@ -1,0 +1,300 @@
+/* cssreset */
+div,ul,li,h1,h2,p,a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+h2 {
+    font: 20px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    /* 行高如果不使用具体的值的话，推荐使用纯数字的，比如1.5，一般不使用百分比。
+    可以看下这个文档了解一些细节：https://developer.mozilla.org/zh-CN/docs/Web/CSS/line-height */
+    line-height: 150%;
+    font-weight: bold;
+}
+/* 头部导航条 */
+.top-bar {
+    background-color: #545454;
+    font-size: 12px; 
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+
+}
+.top-bar>ul {
+    display: flex;
+}
+.top-bar>ul>li {
+    margin: 0 10px;
+    padding: 7px 0;
+    flex: 0 1 auto;
+}
+.top-bar li a {
+    color: #fff;
+}
+.top-bar .usersdata {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid red;
+
+}
+.top-bar .menu {
+    position: relative;
+    padding: 4px 20px 4px 0;
+    border: 1px solid red;
+    color: #fff;
+}
+.top-bar .items {
+    position: absolute;
+    width: 50px;
+    padding: 10px 20px;
+    top: 30px;
+    right: 10px;
+    border: 1px solid #aaaaaa;
+    background-color: #fff;
+}
+.top-bar .items a {
+    color: #545454;
+}
+.top-bar .menu .icon-packup {
+    display: none;
+}
+.top-bar .menu .items {
+    display: none;
+}
+.top-bar .menu.active .icon-unfold {
+    display: none;
+}
+.top-bar .menu.active .icon-packup {
+    display: inline-block;
+}
+.top-bar .menu.active .items {
+    display: block;
+}
+/* main-nav */
+.main-nav {
+    background-color: #ecf4ed;
+    width: 760px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav .logo {
+    background: url(logo.png) no-repeat;
+    background-position: 0px 0;
+    background-size: 159px 35px;
+    width: 159px;
+    height: 35px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+.main-nav-links {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+/* 使用border，则超出div.main-nav，会使“日记” 受浮动影响，但已经clearfix*/
+.main-nav-links li {
+    margin: 0 10px;
+    line-height: 1.5;
+    padding: 28px 0;  
+}
+.main-nav-links li a {
+    color: #2e963d;
+}
+.main-nav-links li a:hover,.main-nav-links li a:active {
+    color: #fff;
+    background-color: #2e963d;
+}
+.main-nav .search-bar {
+    border: 1px solid #e2e9e1;
+    float: right;
+    background-color: #fff;
+    margin: 0 20px;
+}
+.main-nav .search-bar input {
+    border: none;
+    background-color: #fff;
+    padding: 6px;
+}
+/* 分享模块 */
+.section-share {
+    width: 760px;
+    margin: 20px auto;
+}
+.section-share .bar {
+    display: flex;
+    justify-content: space-between;
+}
+.section-share .nav {
+    display: flex;
+    justify-content: flex-start;
+}
+.section-share .nav li {
+    padding: 3px 16px;
+    background: url(2css_sprites.png) no-repeat -3px -135px;
+    background-size: 20px;
+}
+.section-share .nav li:nth-child(2) {
+    background-position: -3px -95px;
+}
+.section-share .nav li:nth-child(3) {
+    background-position: -3px -74px;
+}
+.section-share .nav li:nth-child(4) {
+    background-position: -7px -83px;
+    background-size: 28px;
+}
+.section-share .nav a {
+    color: #545454;
+    /* font-size: 12px; */
+}
+.section-share .set {
+    color: #545454;
+    /* font-size: 12px; */
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+    background: url(2css_sprites.png) no-repeat 0 -35px;
+    background-size: 20px;
+}
+.section-share .set a {
+    color: #545454;
+}
+.section-share .search-bar {
+    display: flex;
+    border: 1px solid #545454;
+    align-items: center;
+}
+.section-share .search-bar input {
+    border: none;
+    flex: 1;
+    padding: 5px;
+    /* font-size: 12px; */
+}
+.section-share .search-bar input:focus {
+    outline: none;
+}
+.section-share .search-bar a {
+    background: url(2css_sprites.png) no-repeat 0px -16px;
+    background-size: 20px;
+    height: 20px;
+    width: 25px;
+    flex: none;
+}
+.section-share .search-bar a:nth-child(2) {
+    background-position: 3px -118px;
+}
+/* 日记模块 */
+.section-dairy {
+    width: 760px;
+    margin: 10px auto;
+}
+.section-dairy li {
+    display: flex;
+}
+.section-dairy li .avatar span {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(avatar.png);
+    background-size: 48px 48px;
+    margin: 0 20px;
+}
+.section-dairy li .main {
+    /* 这里为什么不使用float: left来实现布局呢？
+    不过你可以顺便了解一下为什么使用overflow: hidden则可以阻止环绕
+    从这里开始探索一个叫BFC的东西：
+    https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context */
+    /* overflow: hidden; */
+    width: 672px;
+}
+.section-dairy li .main div,.section-dairy li .main p {
+    padding: 5px 0;
+}
+.section-dairy li span {
+    color: #aaaaaa;
+}
+.section-dairy li .main .summary {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+.section-dairy li .summary a {
+    color: #3376aa;
+    font-size: 1.1em;
+}
+.section-dairy li .summary a:hover {
+    background-color: #3376aa;
+    color: #fff;
+}
+/* 时间模块 */
+.section-time {
+    width: 760px;
+    margin: 0 auto;
+}
+.section-time h2 a {
+    font-size: 16px;
+    color: #3376aa;
+    font-weight: bold;
+}
+.section-time ul {
+    display: flex;
+    justify-content: center;
+}
+.section-time li {
+    margin-right: 60px;
+    margin-bottom: 30px;
+    width: 100px;
+    text-align: center;
+}
+.section-time li a {
+    display: block;
+    margin-bottom: 10px;
+    color: #3376aa;
+}
+.section-time li a.title:hover {
+    background-color: #3376aa;
+    color: #fff;
+}
+.section-time li div span {
+    color: #999;
+}
+/* 底部导航条 */
+footer ul {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+footer li {
+    position: relative;
+    padding: 0 10px 0 0;
+}
+footer li:after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    content: '';
+    display: block;
+    background-color: #3376aa;
+    transform: scale(0.2);
+    top: 4px;
+    right: 0px;
+}
+footer li:last-child:after {
+    display: none;
+}
+footer a {
+    color: #3376aa;
+}
+footer a:hover {
+    color: #fff;
+    background-color: #3376aa;
+}
