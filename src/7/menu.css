@@ -65,7 +65,7 @@ h2 {
 .top-bar .menu .items {
     display: none;
 }
-.top-bar .menu.active .icon-unflod {
+.top-bar .menu.active .icon-unfold {
     display: none;
 }
 .top-bar .menu.active .icon-packup {

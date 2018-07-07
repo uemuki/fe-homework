@@ -4,14 +4,21 @@ div,ul,li,a {
     list-style: none;
     text-decoration: none;
 }
-div.section-share {
+.section-share {
     border: 1px solid blue;
     width: 700px;
     margin: 0 auto;
     border: 1px solid blue;
 }
+.section-share .bar {
+    display: flex;
+    justify-content: 
+}
 div.set,ul.nav {
     border: 1px solid black;
+}
+.section-share .nav {
+
 }
 ul::after {
     content: "";
@@ -20,7 +27,6 @@ ul::after {
 }
 .section-share li {
     border: 1px solid red;
-    float: left;
 }
 /* 文本无法上下居中，margin与line-height冲突 */
 .section-share .icon {
