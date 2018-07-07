@@ -58,6 +58,9 @@ div,ul,li,a {
     padding: 5px;
     font-size: 12px;
 }
+.section-share .search-bar input:focus {
+    outline: none;
+}
 .section-share .search-bar a {
     background: url(2css_sprites.png) no-repeat 0px -16px;
     background-size: 20px;
