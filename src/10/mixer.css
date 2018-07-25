@@ -1,0 +1,38 @@
+/* div {
+    border: 1px solid red;
+} */
+.color-mixer {
+    border: 1px solid black;
+    padding: 10px;
+    width: 300px;
+}
+.adjuster>div {
+    display: flex;
+    justify-content: flex-start;
+}
+.adjuster .title {
+    width: 50px;
+    margin-left: 10px;
+}
+.adjuster .body {
+    margin-left: 20px;
+    text-align: center;
+    flex: 1;
+}
+.adjuster .body input {
+    width: 100%;
+}
+.box {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.box .label {
+    margin-left: 10px;
+}
+.box .indicator {
+    border: 1px solid black;
+    margin-left: 85px;
+    width: 70px;
+    height: 70px;
+}

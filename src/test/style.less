@@ -1,12 +1,40 @@
-.clearfix() {
-  content: '';
-  display: block;
-  clear: both;
+@nice-blue: #5B83AD;
+@light-blue: @nice-blue+#111;
+.ball {
+  color: @nice-blue;
+  border: 1px solid @light-blue;
+}
+#outer {
+  .inner {
+    color: red;
+  }
 }
 
-.page-header {
-  .clearfix();
-  .logo {
-    float: left;
-  }
+.c {
+  #outer > .inner;
+}
+
+// Variables
+@link-color:        #428bca; // sea blue
+@link-color-hover:  darken(@link-color, 10%);
+
+// Usage
+a,
+.link {
+  color: @link-color;
+}
+a:hover {
+  color: @link-color-hover;
+}
+.widget {
+  color: #fff;
+  background: @link-color;
+}
+.bgc{ 
+    background-color: red;    //声明一个样式 
+} 
+.box{ 
+    width:100px; 
+    height: 100px; 
+    .bgc;    //将样式加入到元素中 
 }

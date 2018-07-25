@@ -1,0 +1,31 @@
+div,h2 {
+    margin: 0;
+    padding: 0;
+}
+.border() {
+    border: 1px solid #aaaaaa;
+}
+.clearfix() {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+.selector {
+    .clearfix();
+    margin: 20px 0;
+    div {
+        float: left;
+        margin-right: 20px;
+    }
+}
+.text {
+    margin: 20px 0;
+}
+.output {
+    .border();
+    width: 500px;
+    height: 200px;
+    margin: 20px 0;
+}

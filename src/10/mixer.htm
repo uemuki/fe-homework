@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="mixer.css">
+</head>
+<body>
+    <h2>color mixer</h2>
+    <div class="color-mixer">
+        <div class="adjuster">
+            <div class="red">
+                <div class="title">red</div>
+                <div class="body">
+                    <input type="range" min="0" max="255" value="0">
+                </div>
+            </div>
+            <div class="green">
+                <div class="title">green</div>
+                <div class="body">
+                    <input type="range" min="0" max="255" value="0">
+                </div>
+            </div>
+            <div class="blue">
+                <div class="title">blue</div>
+                <div class="body">
+                    <input type="range" min="0" max="255" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="indicator"></div>
+            <div class="label">value</div>
+        </div>
+    </div>
+    <script src="mixer.js"></script>
+</body>
+</html>
