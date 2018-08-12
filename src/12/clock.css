@@ -1,0 +1,46 @@
+.time {
+    text-align: center;
+    font-size: 36px;
+}
+.dial {
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 150px;
+    position: relative;
+}
+.hour {
+    width: 60px;
+    height: 12px;
+    background-color: blue;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    margin-top: -6px;
+    /* transform: rotate(20deg); */
+    transform-origin: left;
+    opacity: 0.5;
+}
+.minute {
+    width: 90px;
+    height: 9px;
+    background-color: red;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    margin-top: -5px;
+    transform-origin: left;
+    opacity: 0.5;
+}
+.second  {
+    width: 120px;
+    height: 6px;
+    background-color: gray;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    margin-top: -3px;
+    transform-origin: left;
+    opacity: 0.5;
+}

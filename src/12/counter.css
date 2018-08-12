@@ -1,0 +1,33 @@
+div {
+    margin: 0;
+    padding: 0;
+}
+.counter-box {
+    border: 1px solid #aaaaaa;
+    width: 400px;
+    text-align: center;
+}
+.progress {
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    width: 300px;
+    height: 10px;
+    margin: 50px auto;
+}
+.bar {
+    background-color: rgb(87, 151, 248);
+    border-radius: 5px;
+    /* width: 20%; */
+    height: 10px;
+}
+button {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: none;
+    background-color: #1389f8;
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-size: 30px;
+    outline: none;
+}
